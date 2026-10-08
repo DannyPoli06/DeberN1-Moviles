@@ -1,17 +1,74 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Perfil Profesional</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- Tarjeta con Foto Circular y Nombre -->
+  <ion-card class="ion-text-center ion-padding">
+    <div class="avatar-container">
+      <ion-avatar>
+        <img src="assets/perfil.jpeg" alt="Foto de perfil" />
+      </ion-avatar>
+    </div>
+
+    <ion-card-header>
+      <ion-card-title>DANIEL ANDRÉS DÍAZ BEDÓN</ion-card-title>
+      <ion-card-subtitle color="primary">Tecnología en Desarrollo de Software</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Soy estudiante de Desarrollo de Software con enfoque amplio y adaptativo. Me destaco por ser responsable, servicial, activo, con habilidades en trabajo en equipo, atención al cliente y alta capacidad de aprendizaje.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Lista de Datos de Contacto -->
+  <div class="seccion-titulo">
+    <h3>Datos de Contacto</h3>
+  </div>
+
+  <ion-list lines="full">
+    <ion-item>
+      <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h3>Correo Electrónico</h3>
+        <p>danielandresdiazbedon@gmail.com</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="call-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h3>Teléfono</h3>
+        <p>0962050285</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="location-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h3>Dirección</h3>
+        <p>Eugenio Espejo, Casa 7 y José Mejía Lequerica, Quito</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h3>Fecha de Nacimiento</h3>
+        <p>6 de mayo de 2003</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="car-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>
+        <h3>Licencia de Conducir</h3>
+        <p>Tipo B</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

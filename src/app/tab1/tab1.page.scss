@@ -1,0 +1,21 @@
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+
+  ion-avatar {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #3880ff;
+  }
+}
+
+.seccion-titulo {
+  margin-left: 10px;
+  margin-top: 20px;
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
